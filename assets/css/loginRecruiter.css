@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Lexend Deca';
+    color: white;
+    /* color: white; */
+}
+
+:root {
+    --primary-blue: #0d6efd;
+}
+
+/* body {
+    width: 100%;
+    position: relative;
+} */
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1618%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient1619)'%3e%3c/rect%3e%3cpath d='M1440 0L740.49 0L1440 1.79z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M740.49 0L1440 1.79L1440 64.39L678.14 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M678.14 0L1440 64.39L1440 283.13L512.46 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M512.46 0L1440 283.13L1440 326.97L205.17000000000002 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 560L686.73 560L0 294.81z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 294.81L686.73 560L850.11 560L0 180.15z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 180.14999999999998L850.11 560L1046.23 560L0 79.55999999999997z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 79.55999999999995L1046.23 560L1326.79 560L0 47.809999999999945z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1618'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='50%25' y1='100%25' x2='50%25' y2='0%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1619'%3e%3cstop stop-color='rgba(14%2c 42%2c 71%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(13%2c 110%2c 253%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    background-repeat: none;
+    background-position: center center;
+    background-size: 100% 100%;
+    /* background-color: rgb(190, 190, 190); */
+}
+
+.disN {
+    display: none;
+}
+
+.disB {
+    display: block;
+}
+
+/* login section */
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1;
+    background-color: transparent;
+    padding: 40px 40px;
+    border-radius: 8px;
+    width: 30%;
+
+}
+
+.toggle-btn-container {
+    display: flex;
+    width: 100%;
+    background: white;
+    padding: 12px 12px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-blue);
+    width: 50%;
+    height: 100%;
+    border-radius: 20px 0px 0px 20px;
+    /* animation: slide .2s ease-in forwards; */
+}
+
+.animationF {
+    animation: slide .2s ease-in forwards;
+}
+
+.animationR {
+    animation: slide .2s ease-in reverse;
+
+}
+
+.dnone {
+    display: none;
+}
+
+.dblock {
+    display: block;
+}
+
+.toggle-btn {
+    width: 50%;
+    color: black;
+    border-style: none;
+    background: transparent;
+    z-index: 2;
+    cursor: pointer;
+}
+
+h6 {
+    margin: 15px auto;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    width: 100%;
+    margin: 15px auto;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+
+form>input {
+    text-align: left;
+    border-style: none;
+    /* border: 2px solid blue; */
+    background-color: white;
+    color: black;
+}
+
+form input:nth-child(3) {
+    margin-bottom: 5px;
+}
+
+form>a {
+    font-size: 10px;
+    font-weight: 300;
+    margin: auto;
+    /* margin-right: 5px; */
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 2px;
+    text-align: left;
+}
+
+form>button {
+    margin: 10px auto;
+    width: 90%;
+    background-color: var(--primary-blue);
+    /* color: var(--primary-blue); */
+}
+
+
+/** animations */
+
+@keyframes slide {
+    0% {
+        left: 0;
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    100% {
+        left: 50%;
+        border-radius: 0px 20px 20px 0px;
+    }
+}
